@@ -1,0 +1,477 @@
+* {
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1920px;
+}
+
+a {
+    text-decoration: none;
+}
+.nav ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+    display:inline;
+    padding:0 40px;
+    font-size: 20px;
+}
+nav {
+    text-align: left;
+    padding:30px;
+    background:#71BC68;
+}
+nav img {
+    display: inline-block;
+    max-width:400px;
+    min-width: 300px;
+    margin:-30px 100px;
+}
+nav a {
+    color:#ffffff;
+    font-weight: bold;
+    transition:.3s;
+}
+nav a:hover {
+    color:#ffca18;
+    transition: .3s;
+}
+.first h1 {
+text-align: center;
+color:#71BC68;
+font-size: 48px;
+font-weight: 350;
+letter-spacing: .5px;
+}
+.yellowhr {
+    border-top: 4px solid #ffca18;
+    width:30%;
+}
+
+.hero {
+    background-image:url("../images/CASA solar.jpg");
+    background-position:left;
+    background-attachment: fixed;
+    width:100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.hero h2 {
+    padding:40px;
+    color:#ffffff;
+    background-color:rgba(0, 0, 0, 0.25);
+    font-size:26px;
+    font-weight:400;
+}
+.btngreen {
+    border-radius: 20px;
+    border:none;
+    background-color:#71BC68;
+    padding:15px;
+    margin-left: 40px;
+    font-size: 20px;
+    transition: .5s;
+    color:white;
+}
+.btngreen:hover {
+    transform:translateY(-10px);
+    transition:.5s;
+    color:#71BC68;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.grid1 {
+    display:grid;
+    grid-template-columns: 60% 40%;
+}
+.grid1 .a1 {
+    background-color:#71BC68;
+    color:white;
+    font-size:28px;
+    padding:30px;
+}
+.a1 h2 {
+    font-weight: 200;
+}
+.b1 h1 {
+    font-weight: 500;
+}
+.btnyellow {
+    border-radius: 20px;
+    border:3px solid #ffffff;
+    padding:15px;
+    font-size: 20px;
+    transition: .5s;
+    color:#ffffff;
+    background-color:#71BC68;
+}
+.btnyellow:hover {
+    transition: .5s;
+    transform:translateY(-10px);
+    cursor:pointer;
+    color:#ffffff;
+    background-color:#ffca18;
+    border:3px solid #ffca18;
+}
+.a2 {
+    grid-column: 2;
+}
+
+.container {
+    position: relative;
+    width:100%;
+    overflow: hidden;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    min-width:450px;
+  }
+  .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }  
+.container:hover .image {
+    opacity:0.5;
+    zoom:normal;
+    transform:scale(1.2);
+    transition:.8s;
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+.text p{
+    background-color:#ffffff;
+    font-size:22px;
+    color:#71BC68;
+    padding:20px;
+    box-shadow: 5px 5px 20px lightgray;
+}
+
+.grid2 {
+    display:grid;
+    grid-template-columns: 30% 30% 40%;
+    column-gap: none;
+    text-align: center;
+}
+.grid2 .b {
+    max-width:100%;
+    margin:0 auto;
+    display:block;
+    height: 100%;
+}
+.b1 h1 {
+    padding:20px;
+    color:#71BC68;
+    font-size:40px;
+    margin:60px auto;
+}
+.b3 {
+    background-color: #71BC68;
+    width: 100%;
+    padding:20px;
+    text-align: center;
+    color:#ffffff;
+    font-size: 26px;
+    margin:0 auto;
+}
+.b3 p {
+    font-weight: 300;
+    margin:50px;
+}
+.container2 {
+    position: relative;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.b {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height:auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .overlay2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }  
+.container2:hover .b {
+    opacity:0.5;
+    zoom:normal;
+    transform:scale(1.2);
+    transition:.8s;
+}
+.container2:hover .overlay2 {
+    opacity: 1;
+}
+.container2 .text2 {
+    background-color:#71BC68;
+    font-size:20px;
+    color:#FFFFFF;
+    padding:30px;
+    box-shadow: 5px 5px 30px lightgray;
+}
+.cont h1 {
+    background-color:#71BC68;
+    color:#ffffff;
+    padding:50px;
+    text-align:center;
+    font-weight:600;
+    font-size:38px;
+}
+.sp {
+    color:#fff;
+    background-color: #71BC68;
+    font-weight: 450;
+    text-align:center;
+    width: 50%;
+    margin:0 auto;
+    padding:20px;
+    box-shadow: 5px 5px 30px grey;
+}
+.cont {
+    background-image:url(../images/solfondo3d-3.png);
+    background-position:right;
+    background-attachment:fixed;
+    width:100%;
+    background-repeat:no-repeat;
+}
+.cont p {
+    font-size: 18px;
+}
+.sec3 h2 {
+    font-size:30px;
+    font-weight:500;
+}
+.sec3 p {
+    font-size:18px;
+}
+.i1 {
+    text-align:center;
+    width:50%;
+    margin:20px auto;
+    padding:25px;
+    border-radius:10px;
+    box-shadow: 5px 5px 30px lightgrey;
+    background-color:#ffffff;
+    color:#71BC68;
+}
+.i2 {
+    text-align:center;
+    width:50%;
+    margin:20px auto;
+    padding:25px;
+    border-radius:10px;
+    background-color:#ffffff;
+    box-shadow: 5px 5px 30px lightgrey;
+}
+
+.sec4 {
+    background-color:#71BC68;
+    color:#ffffff;
+    padding:20px;
+    text-align:center;
+    margin:0 auto;
+}
+.sec4 h1 {
+    padding:30px;
+}
+.sec4 img:hover {
+    transform: scale(1.1);
+    transition:.5s;
+}
+
+.mantenimiento {
+    display:block;
+    margin:0 auto;
+    max-width:600px;
+}
+.leyes h1 {
+    text-align: center;
+    padding:20px;
+    font-size:38px;
+    font-weight:400;
+    color:#71BC68;
+    width:70%;
+    margin:0 auto;
+}
+.leyes p {
+    text-align:center;
+    font-size:26px;
+    font-weight:300;
+    padding:40px;
+    color:#71BC68;
+    width:50%;
+    margin:0 auto;
+}
+.cero {
+    display:block;
+    max-width:500px;
+    margin:0 auto;
+    padding:50px;
+}
+
+.sec5 {
+    background-color:#71BC68;
+    height: 25vh;
+    }
+
+
+
+
+
+
+    
+/*  "SERVICIOS" CSS */
+
+
+.serviciosTop h1 {
+    background-color: #71BC68;
+    color:#ffffff;
+    padding:25px;
+    text-align:center;
+    font-weight:380;
+    width:80%;
+    margin:30px auto;
+    box-shadow:5px 5px 5px rgba(0,0,0,.15);
+}
+
+.serviciosGrid {
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap:5px;
+    justify-content: center;
+}
+    
+.containerCasa {
+    overflow: hidden;
+    position:relative;
+    width:100%;
+    transition: .5s;
+}
+.textCasa {
+    background-color:#71BC68;
+    color:#ffffff;
+    text-align:center;
+    padding:20px;
+    box-shadow:5px 5px 5px rgba(0,0,0,.15);
+    margin-top:50px;
+}
+.containerCasa h2 {
+color:#71BC68;
+font-weight:500;
+font-size:32px;
+text-align:center;
+padding: 10px;
+transition: .5s;
+box-shadow: 5px 5px 5px lightgray;
+}
+.containerCasa img {
+    opacity:1;
+    display:block;
+    width:100%;
+    height: auto;
+    transition:.5s ease;
+    backface-visibility:hidden;
+}
+.middleCasa {
+    transition:.5s ease;
+    opacity:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.containerCasa:hover img {
+    opacity:.5;
+    transform:scale(1.1);
+}
+.containerCasa:hover .middleCasa {
+    opacity:1;
+}
+.containerCasa:hover {
+    cursor:pointer;
+}
+.containerCasa:hover h2 {
+    color:#ffffff;
+    background-color: #ffca18;
+    transition: .5s;
+}
+
+
+/* From here it is "Contacto" CSS */
+
+.contactFirst h1 {
+    color:#71BC68;
+    text-align:center;
+    font-size:45px;
+    font-weight: 400;
+}
+.contactSec {
+    margin:0 auto;
+    text-align:center;
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    .grid1 {
+        display: block;
+    }
+    .grid2 {
+        display: block;
+    }
+    h1 {
+        font-size:28px;
+    }
+    .i1 {
+        width:80%;
+    }
+    .i2 {
+        width:80%;
+    }
+    .leyes p {
+        width:100%;
+    }
+    .leyes h1 {
+        width:80%;
+        font-size:34px;
+    }
+    .sp {
+        width:80%;
+    }
+    .first h1 {
+        font-size:38px;
+    }
+    .mantenimiento {
+        max-width:300px;
+    }
+
+    .serviciosGrid {
+        display:block;
+    }
+}
